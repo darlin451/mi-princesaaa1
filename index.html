@@ -14,11 +14,11 @@
     <link rel="manifest" href="assets/site.webmanifest">
 
     <script type="text/javascript">
-        var password = "dhali"; // Sæt adgangskoden til "dhali"
+        var password = "dhali"; 
         var pass1 = prompt("Please enter the password to view this page:");
         if (pass1 != password) {
             alert("Access Denied");
-            window.location = "https://www.google.com"; // Redirects to Google if password is wrong
+            window.location = "https://www.google.com"; 
         }
     </script>
 
@@ -28,15 +28,13 @@
             color: #004242;
         }
 
-        /* Sørger for at baggrundsbilledet dækker hele skærmen */
         body {
             background: url('sko.png') no-repeat center center fixed;
             background-size: cover;
         }
 
-        /* Øverste boks med dali.jpg som baggrund */
         .top-box {
-            background-image: url('dali.jpg'); /* Baggrundsbillede */
+            background-image: url('dali.jpg'); 
             background-size: cover;
             background-position: center;
             height: 200px;
@@ -58,7 +56,6 @@
             font-weight: bold;
         }
 
-        /* Pinkt hjerte som erstatning for den ekstra boks */
         .heart-box {
             display: flex;
             justify-content: center;
@@ -76,9 +73,8 @@
             color: white;
         }
 
-        /* Nederste boks med dhali.jpeg og billede af mariuka2.png som en cirkel inde i boksen */
         .bottom-box {
-            background-image: url('dhali.jpeg'); /* Baggrundsbillede */
+            background-image: url('dhali.jpeg'); 
             background-size: cover;
             background-position: center;
             height: 200px;
@@ -92,13 +88,13 @@
             max-width: 400px;
             margin: auto;
             position: relative;
+            cursor: pointer; /* Gør boksen klikbar */
         }
 
-        /* For at få Mariuka2 billedet til at være en cirkel inde i den nederste boks */
         .bottom-box img {
             width: 100px;
             height: 100px;
-            border-radius: 50%; /* Gør billedet rundt */
+            border-radius: 50%;
         }
     </style>
 </head>
@@ -120,14 +116,13 @@
             </div>
         </div>
 
-        <!-- Pinkt hjerte som erstatning for den anden boks -->
         <div class="heart-box">
-            <i class="bi bi-heart-fill"></i> <!-- Pinkt hjerte ikon -->
+            <i class="bi bi-heart-fill"></i> 
         </div>
 
-        <!-- Nederste boks med dhali.jpeg og billede af mariuka2.png som en cirkel inde i boksen -->
-        <div class="bottom-box">
-            <img src="mariuka2.png" alt="Billede af Mariuka"> <!-- Mariuka2 billedet skal være her inde i den nederste boks -->
+        <!-- Nederste boks med link -->
+        <div class="bottom-box" onclick="window.location.href='https://gifft.me/o/l/3xub8qypqv4kh2kxhiiwhsed';">
+            <img src="mariuka2.png" alt="Billede af Mariuka">
             <span>TRYK PÅ MIG MARIA</span>
             <i class="bi bi-caret-left-fill"></i>
         </div>
@@ -150,8 +145,5 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-    <h1 class="display-4 fw-bold" style="color: #FF69B4;">For min yndlings !💗</h1>
-    <p class="lead mt-4 mb-4" style="color: #FF69B4;">Mi amor🤭</p>
-    <p class="lead mb-4" style="color: #FF69B4;">Afro-Romanian</p>
-</html>
 
+</html>
