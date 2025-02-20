@@ -34,9 +34,8 @@
             background-size: cover;
         }
 
-        /* Klikbar boks */
-        .clickable-card {
-            position: relative;
+        /* Øverste boks med dali.jpg som baggrund */
+        .top-box {
             background-image: url('dali.jpg'); /* Baggrundsbillede */
             background-size: cover;
             background-position: center;
@@ -52,12 +51,29 @@
             margin: auto;
         }
 
-        /* For at få Mariuka2 billedet til at være en cirkel */
-        .clickable-card img {
+        /* Nederste boks med dhali.jpeg som baggrund */
+        .bottom-box {
+            background-image: url('dhali.jpeg'); /* Baggrundsbillede */
+            background-size: cover;
+            background-position: center;
+            height: 200px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            padding: 20px;
+            width: 100%;
+            max-width: 400px;
+            margin: auto;
+            position: relative;
+        }
+
+        /* For at få Mariuka2 billedet til at være en cirkel inde i den nederste boks */
+        .bottom-box img {
             width: 100px;
             height: 100px;
             border-radius: 50%; /* Gør billedet rundt */
-            margin-right: 15px;
         }
 
         .clickable-card span, .clickable-card i {
@@ -85,12 +101,17 @@
             </div>
         </div>
 
-        <!-- Klikbar boks med billede af Maria som cirkel -->
-        <a href="https://gifft.me/o/l/3xub8qypqv4kh2kxhiiwhsed" class="clickable-card">
-            <img src="mariuka2.png" alt="Billede af hende"> <!-- Mariuka2.png skal være billedet inde i boksen -->
+        <!-- Øverste boks med dali.jpg -->
+        <div class="top-box">
+            <span>Øverste boks med Dali</span>
+        </div>
+
+        <!-- Nederste boks med dhali.jpeg og billede af mariuka2.png som en cirkel inde i boksen -->
+        <div class="bottom-box">
+            <img src="mariuka2.png" alt="Billede af Mariuka"> <!-- Mariuka2 billedet skal være her inde i den nederste boks -->
             <span>TRYK PÅ MIG MARIA</span>
             <i class="bi bi-caret-left-fill"></i>
-        </a>
+        </div>
     </div>
 
     <!-- Modal -->
