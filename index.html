@@ -76,9 +76,21 @@
             border-radius: 50%; /* Gør billedet rundt */
         }
 
-        .clickable-card span, .clickable-card i {
-            font-size: 20px;
-            font-weight: bold;
+        /* Tilføj et pinkt hjerte i stedet for tekst i den anden boks */
+        .heart-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: pink;
+            height: 200px;
+            width: 100%;
+            max-width: 400px;
+            margin: auto;
+            border-radius: 10px;
+        }
+
+        .heart-box i {
+            font-size: 100px;
             color: white;
         }
     </style>
@@ -104,6 +116,11 @@
         <!-- Øverste boks med dali.jpg -->
         <div class="top-box">
             <span>Øverste boks med Dali</span>
+        </div>
+
+        <!-- Pinkt hjerte som erstatning for anden boks -->
+        <div class="heart-box">
+            <i class="bi bi-heart-fill"></i> <!-- Pinkt hjerte ikon -->
         </div>
 
         <!-- Nederste boks med dhali.jpeg og billede af mariuka2.png som en cirkel inde i boksen -->
@@ -135,4 +152,5 @@
     <p class="lead mt-4 mb-4" style="color: #FF69B4;">Mi amor🤭</p>
     <p class="lead mb-4" style="color: #FF69B4;">Afro-Romanian</p>
 </html>
+
 
