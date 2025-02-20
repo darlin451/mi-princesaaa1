@@ -2,3 +2,6 @@ html, body {
   height: 100%;
   width: 100%;
 }
+.pink-text {
+    color: #FF69B4; /* Pink farve */
+}
