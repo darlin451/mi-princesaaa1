@@ -51,6 +51,24 @@
             margin: auto;
         }
 
+        /* Pinkt hjerte som erstatning for den ekstra boks */
+        .heart-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: pink;
+            height: 200px;
+            width: 100%;
+            max-width: 400px;
+            margin: auto;
+            border-radius: 10px;
+        }
+
+        .heart-box i {
+            font-size: 100px;
+            color: white;
+        }
+
         /* Nederste boks med dhali.jpeg som baggrund */
         .bottom-box {
             background-image: url('dhali.jpeg'); /* Baggrundsbillede */
@@ -74,24 +92,6 @@
             width: 100px;
             height: 100px;
             border-radius: 50%; /* Gør billedet rundt */
-        }
-
-        /* Tilføj et pinkt hjerte i stedet for tekst i den anden boks */
-        .heart-box {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: pink;
-            height: 200px;
-            width: 100%;
-            max-width: 400px;
-            margin: auto;
-            border-radius: 10px;
-        }
-
-        .heart-box i {
-            font-size: 100px;
-            color: white;
         }
     </style>
 </head>
@@ -152,5 +152,3 @@
     <p class="lead mt-4 mb-4" style="color: #FF69B4;">Mi amor🤭</p>
     <p class="lead mb-4" style="color: #FF69B4;">Afro-Romanian</p>
 </html>
-
-
