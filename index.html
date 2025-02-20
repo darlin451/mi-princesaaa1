@@ -73,6 +73,7 @@
             color: white;
         }
 
+        /* Gør hele boksen til et klikbart link */
         .bottom-box {
             background-image: url('dhali.jpeg'); 
             background-size: cover;
@@ -82,13 +83,25 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            text-decoration: none;
+            text-align: center;
             padding: 20px;
             width: 100%;
             max-width: 400px;
             margin: auto;
             position: relative;
-            cursor: pointer; /* Gør boksen klikbar */
+        }
+
+        .bottom-box a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
         }
 
         .bottom-box img {
@@ -120,11 +133,11 @@
             <i class="bi bi-heart-fill"></i> 
         </div>
 
-        <!-- Nederste boks med link -->
-        <div class="bottom-box" onclick="window.location.href='https://gifft.me/o/l/3xub8qypqv4kh2kxhiiwhsed';">
-            <img src="mariuka2.png" alt="Billede af Mariuka">
-            <span>TRYK PÅ MIG MARIA</span>
-            <i class="bi bi-caret-left-fill"></i>
+        <!-- Klikbar boks -->
+        <div class="bottom-box">
+            <a href="https://gifft.me/o/l/3xub8qypqv4kh2kxhiiwhsed" target="_blank">
+                TRYK PÅ MIG MARIA
+            </a>
         </div>
     </div>
 
